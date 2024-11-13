@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #64aab4, #f1f8e9); /* Soft gradient */
+    background-attachment: fixed;
+    animation: backgroundGradient 10s ease infinite;
+    transition: background-color 0.3s ease;
+}
+@keyframes backgroundGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Header */
+header {
+    background;background: linear-gradient(135deg, #d0e8d0, #759e4b); /* Soft gradient */;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+    animation: fadeIn 1.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0398ac;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 2s ease;
+}
+
+#solar, #wind, #hydro, #geothermal, #bio {
+    border: 20px solid transparent;
+    padding: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border:black solid;
+    
+}
+
+#solar:hover, #wind:hover, #hydro:hover, #geothermal:hover, #bio:hover {
+    border-color: rgb(19, 14, 7);
+    transform: scale(1.05);
+    
+}
+
+main section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: black solid;
+}
+
+main section:hover {
+    transform: translateY(-10px);
+}
+
+h2, h3 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 0px;
+    transition: color 0.1s ease;
+}
+
+h2:hover, h3:hover {
+    color: #572e117e;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(195, 50, 50);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease;
+}
+/* Main Background for the Materials or Methods Section */
+#materials-methods {
+    background-image: url('https://example.com/background-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px 20px;
+    color: black;
+    position: relative;
+}
+
+#materials-methods::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey; /* Dark overlay for readability */
+    z-index: 1;
+}
+
+#materials-methods h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color:#fff; /* Golden color for the title */
+}
+
+.energy-section {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for sections */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.energy-section:hover {
+    transform: scale(1.03);
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 36px;
+    margin-right: 15px;
+    color: #2a9d8f;
+}
+
+/* Heading Styling */
+.energy-section h3 {
+    color: #2a9d8f;
+    margin-bottom: 8px;
+}
+
+#benefical-governmant{
+    display: none;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 0px;
+    transition: color 0.1s ease;
+}
+
+/* Main Section Styling */
+#need-sustainable-energy {
+    background-image: url('https://example.com/sustainable-background.jpg'); /* Replace with a relevant image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay for Background Image */
+#need-sustainable-energy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+#need-sustainable-energy h2,
+#need-sustainable-energy p,
+#need-sustainable-energy blockquote {
+    position: relative;
+    z-index: 2;
+}
+
+/* Icon Styling */
+.sustainable-icon {
+    font-size: 50px;
+    color: #ffd700; /* Golden color for emphasis */
+    text-align: center;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Blockquote Styling */
+#need-sustainable-energy blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ffeb3b; /* Light golden color */
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #ffd700; /* Left border to highlight the quote */
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
